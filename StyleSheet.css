@@ -1,0 +1,46 @@
+﻿#main-header {
+    text-align: center;
+    background-color: navy;
+    color: whitesmoke;
+    padding-bottom:10px;
+    width: 100vw;
+}
+
+body {
+
+/* Navigation bar styling*/
+ .topnav
+{
+    overflow: hidden;
+    background-color: lightseagreen;
+    width: 42%;
+    margin: auto;
+    border-radius:8px;
+    padding-bottom:8px;
+
+}
+
+/*div class for all the images*/
+.my_gallery img{
+    max-width: 600px;
+    border-radius: 10px;
+    background-color:lightcoral;
+
+}
+.my_gallery{
+    background-color:burlywood;
+    display: flex;
+    flex-wrap: wrap;
+}
+.my_gallery figcaption {
+    color: #090a0a;
+    font-style: italic;
+}
+
+#main-footer {
+    text-align: center;
+    background-color: navy;
+    color: whitesmoke;
+}
+
+}

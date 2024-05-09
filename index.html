@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:image" content="images/RMC Half Logo.png" />
+
+	<!--SEO meta, shows this description on browser searches as description-->
+	<meta property="og:description" content="Riverwalk Medical Centre is a full house medical facility that has various practicioners under one roof for your convenience. We accept various medical aids." />
+
+	<!--page title-->
+	<meta property="og:title" content="Riverwalk Medical Centre" />
+
+	<link rel="stylesheet" href="StyleSheet.css" />
+
+	<!--browser title-->
+	<title>RMC</title>
+	<link rel="icon" type="image/x-icon" href="images\RMC Half Logo.png">
+</head>
+
+<body>
+
+	<header id="main-header">
+		<h1>Welcome to Riverwalk Medical Centre</h1>
+		<div class="topnav">
+			<a class="active" href="#home">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+
+			<section>
+				<input type="text" placeholder="search here" />
+			</section>
+
+			<!--Selector buttons that describe the service provided-->
+			<div class="description">
+				<button onclick="updateDescription()">Doctor</button>
+				<button id="pharmacyButton">Pharmacy</button>
+				<button id="labButton">Lab</button>
+			</div>
+
+		</div>
+	</header>
+
+     <!--main page image-->
+	<img src="images\front-image.png" alt="mainpage-image">
+
+	<div class="my_gallery">
+		<div>
+			<p>
+				<img src="images\doctor.jpg" alt="General Practitioner and Paediatrician" />
+				<figcaption>Book your appointment with our GP.</figcaption>
+			</p>
+				<div class="text-container">
+					<h2>Reliable Doctors</h2>
+					<p>We have a number of resident practicioners available 24hrs a day. Should you feel the need to be
+					   treated at the comfort of your home, our doctors are flexible to do house calls. (Note, critical
+					   previous medical history may be required during call for new patients.)
+					</p>
+				</div>
+		</div>
+
+		<div>
+			<p>
+				<img src="images\labMicroscope.jpg" alt="An image of an electronic laboratory microscope" />
+				<figcaption>Inhouse tests with quick results</figcaption>
+			</p>
+				<div class="text-container">
+					<h2>Quick Lab Tests</h2>
+					<p>We understand the consequences that can be caused by delayed third party lab tests and results,
+						hence we have, for your convenience included our specialized laboratory for quicker services.
+					</p>
+				</div>
+		</div>
+
+		<div>
+			<p>
+				<img src="images\medications.jpg" alt="tablets in a two blister packs"/>
+				<figcaption>Inhouse Pharmacy for your convenience.</figcaption>
+			</p>
+				<div class="text-container">
+					<h2>Prescription Convenience</h2>
+					<p></p>
+					<p>Riverwalk Medical Centre has been designed with the patient and convenience in mind. Collect your
+						medication from our well stocked pharmacy without leaving the facility.
+					</p>
+				</div>
+		</div>
+	</div>
+
+	<footer id="main-footer">
+		<p>Copyright &copy; <span id="year"></span>, RMC | Designed by Mandla</p>
+	</footer>
+
+	<script src="rmc.js"></script>
+
+</body>
+</html>
