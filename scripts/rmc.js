@@ -14,10 +14,21 @@ document.getElementById('doctorButton').addEventListener('click', function() {
     updateDescription('Get personalized attention from our caring professionals');
 });
 
+
 document.getElementById('pharmacyButton').addEventListener('click', function() {
     updateDescription('For your convenience, the Pharmacy is within the Centre');
 });
 
 document.getElementById('labButton').addEventListener('click', function() {
     updateDescription('Quick and carefully handled inhouse lab tests.');
+
 });
+
+
+function updateDescription(description) {
+    // Get the description element
+    const descriptionElement = document.querySelector('.description');
+    // Update the text content
+    descriptionElement.textContent = description;
+
+}

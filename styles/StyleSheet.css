@@ -1,46 +1,141 @@
-﻿#main-header {
+﻿/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Header Styles */
+header {
     text-align: center;
     background-color: navy;
     color: whitesmoke;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     width: 100vw;
 }
 
-body {
-
-/* Navigation bar styling*/
- .topnav
-{
+nav {
     overflow: hidden;
     background-color: lightseagreen;
     width: 42%;
     margin: auto;
-    border-radius:8px;
-    padding-bottom:8px;
-
+    border-radius: 8px;
+    padding-bottom: 8px;
 }
 
-/*div class for all the images*/
-.my_gallery img{
-    max-width: 600px;
-    border-radius: 10px;
-    background-color:lightcoral;
-
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
 }
-.my_gallery{
-    background-color:burlywood;
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-input {
+    width: calc(100% - 32px);
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+nav input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.description {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 25px; /* Adjust the space between buttons */
+    margin-top: 5px; /* Optional: add margin to the top of the description container */
+}
+
+.description button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 4px; /* Optional: add border-radius for rounded corners */
+    border: 1px solid #ccc; /* Optional: add border for better visibility */
+    background-color: #f0f0f0; /* Optional: add background color */
+}
+
+.description button:hover {
+    background-color: white;
+    color: #007BFF;
+    transform: scale(1.08);
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 10px;
+}
+
+.my_gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Space between the sections */
+    background-color: burlywood;
+    padding: 20px; /* Padding around the gallery */
+    max-width: 150%; /* Ensure the gallery fills the entire width */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Flexbox container for image and text */
+.info-section {
+    display: flex;
+    align-items: flex-start; /* Align items at the start (top) */
+    gap: 20px; /* Space between the image and the text */
+    background-color: #fff; /* Background color for each section */
+    padding: 10px; /* Padding within each section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for better visual separation */
+    flex: 1 1 calc(33.333% - 40px); /* Responsive flex basis for three columns */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+/* Styles for the images */
+.info-section img {
+    max-width: 150px; /* Set a max-width for the images */
+    border-radius: 10px; /* Rounded corners for images */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Styles for the text container */
+.text-container {
+    max-width: 600px; /* Optional: set a max-width for the text container */
+}
+
+.text-container h2 {
+    margin: 0; /* Remove default margin */
+}
+
+.text-container p {
+    margin-top: 10px; /* Space between the heading and paragraph */
 }
 .my_gallery figcaption {
     color: #090a0a;
     font-style: italic;
 }
 
-#main-footer {
+/* Footer Styles */
+footer {
     text-align: center;
     background-color: navy;
     color: whitesmoke;
-}
-
+    padding: 10px;
 }
