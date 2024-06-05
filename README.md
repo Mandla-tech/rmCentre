@@ -1,13 +1,90 @@
 # rmCentre
-A landing page for proposed website of local medical centre. 
+A landing page sample for proposed website of local medical centre.
 
-The project showcases the inclusion of an icon next to the page title. 
-There also is a navigation bar that would then be linked with other pages built in the website as it is further developed. The page also highlights what would be the proposed services available at the centre in form of buttons have been added at the top navigation bar. These buttons have a responsive functionality which prints out a brief description onclick. 
-The gallery was made to display use of and inclusion of images in the page, as well as different font formatting in terms of headers, paragraphs and figcaptions.
-At the very button of the page is the footer with year display and other information. 
-The web page was written in HTML, with CSS styling and JavaScript was utilized to add functionality.
+# Riverwalk Medical Centre Website (landing page sample)
 
-The webpage was an idea I had after seeing that this centre did not have web presence. (Unfortunately discussions of working on development for the website were turned down by the centre as apparently one was already being developed elsewhere) 
+Welcome to the Riverwalk Medical Centre Website project. This repository contains the HTML, CSS, and JavaScript code for a simple web page showcasing the services provided by Riverwalk Medical Centre. The website includes a header, a navigation bar, service description buttons, a main content area with images and descriptions, and a footer.
+
+## Project Structure
+
+### HTML
+
+The main structure of the webpage is defined in `index.html`. It includes:
+
+- A header with a title and navigation links.
+- Buttons to select and display different service descriptions.
+- A main content area with images and information about the services.
+- A footer with a copyright notice.
+
+### CSS
+
+The styles are defined in `StyleSheet.css`. It includes:
+
+- Global styles for the body and all elements.
+- Specific styles for the header, navigation bar, buttons, and main content area.
+- Flexbox layout for organizing the gallery of images and text.
+
+### JavaScript
+
+The functionality is defined in `rmc.js`. It includes:
+
+- An event listener to update the year in the footer automatically.
+- A function to update the service description when a button is clicked.
+- Event listeners for the buttons to call the update description function with the appropriate text.
+
+## File Structure
+project-root/
+│
+
+├── index.html
+
+├── styles/
+
+│ └── StyleSheet.css
+
+└── scripts/
+
+└── rmc.js
 
 
+## Setup and Usage
 
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/Mandla-tech/rmCentre.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd riverwalk-medical-centre
+    ```
+
+3. Open `index.html` in your web browser to view the website:
+    ```bash
+    open index.html
+    ```
+
+## Functionality
+
+### Buttons
+
+There are three buttons on the page:
+- **Doctor**: Displays the description "Get personalized attention from our caring professionals".
+
+- **Pharmacy**: Displays the description "For your convenience, the Pharmacy is within the Centre".
+
+- **Lab**: Displays the description "Quick and carefully handled inhouse lab tests".
+
+### Updating Descriptions
+
+The `updateDescription` function updates the text content of the description section based on the button clicked. In a fully ran website, these buttons would be redirecting to the actual page link.
+
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. Contributions are welcome!
+You can use any part of this code for further updates or development of your projects.
+
+## Contact
+
+For any inquiries, please contact Mandla at moyo7mandla@gmail.com
